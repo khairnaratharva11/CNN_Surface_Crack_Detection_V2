@@ -1,0 +1,13 @@
+{
+    "Concrete Gray": [150, 150, 150],
+    "Asphalt Black": [40, 40, 40],
+    "Brick Red": [178, 34, 34],
+    "Plaster White": [245, 245, 245],
+    "Tile Terracotta": [204, 78, 92],
+    "Metal Rust": [183, 65, 14],
+    "Wood Brown": [139, 69, 19],
+    "Painted Yellow": [255, 215, 0],
+    "Limestone Tan": [210, 180, 140],
+    "Weathered Cyan": [83, 104, 114],
+    "Moss Green": [138, 154, 91]
+}

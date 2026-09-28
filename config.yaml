@@ -1,0 +1,54 @@
+camera:
+  calibration_pixels_per_mm: null
+  default_source: 0
+  target_fps: 30
+comparison:
+  critical_k: 2.0
+  weight_critical_count: 0.4
+  weight_density: 0.2
+  weight_max_severity: 0.3
+  weight_unreviewed: 0.1
+database:
+  path: db/cracks.db
+deepseek:
+  auto_analyze: true
+inference:
+  confidence_threshold: 0.6
+  heatmap_threshold: 0.5
+  nms_threshold: 0.3
+  stride: 32
+  window_size: 64
+model:
+  arch: mobilenetv2
+  batch_size: 32
+  epochs: 20
+  image_size:
+  - 128
+  - 128
+  learning_rate: 0.001
+  random_seed: 42
+output:
+  crops_dir: outputs/crops
+  snapshots_dir: outputs/snapshots
+paths:
+  dataset_v1_dir: ../CNN_Surface_Crack_Detection/Processed_CrackDataset
+  dataset_v1_original: ../CNN_Surface_Crack_Detection/CrackDataset
+  models_dir: models
+  reports_dir: reports
+project:
+  name: CNN_Surface_Crack_Detection_V2
+  version: 2.0.0
+severity:
+  actions:
+    Critical: Immediate inspection
+    High: Repair soon
+    Low: Monitor
+    Moderate: Schedule sealing
+  length_high: 200
+  length_low: 50
+  length_moderate: 100
+tracking:
+  iou_threshold: 0.3
+  max_age: 15
+  min_hits: 3
+  process_every_nth_frame: 2
